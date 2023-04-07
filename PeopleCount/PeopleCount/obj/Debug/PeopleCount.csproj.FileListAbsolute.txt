@@ -1,0 +1,11 @@
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\bin\Debug\PeopleCount.exe.config
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\bin\Debug\PeopleCount.exe
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\bin\Debug\PeopleCount.pdb
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.csproj.AssemblyReference.cache
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.csproj.SuggestedBindingRedirects.cache
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.Form1.resources
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.Properties.Resources.resources
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.csproj.GenerateResource.cache
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.csproj.CoreCompileInputs.cache
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.exe
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.pdb
