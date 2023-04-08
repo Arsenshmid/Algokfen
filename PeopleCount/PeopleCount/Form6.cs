@@ -64,7 +64,7 @@ namespace PeopleCount
                 textBox1.Text = numResidents1?.ToString() ?? "Не найдено";
 
                 // Вычисляем разницу между официальным числом жителей и фактическим числом жителей и умножаем на 1000
-                int difference = (numResidents2 ?? 0) - (numResidents1 ?? 0);
+                int difference = (numResidents1 ?? 0) - (numResidents2 ?? 0);
                 int potentialSavings = difference * 1000;
 
                 // Отображаем результат вычисления в textBox3 и выводим сообщение, если число жителей меньше, чем заявлено

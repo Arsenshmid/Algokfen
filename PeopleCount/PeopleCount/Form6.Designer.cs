@@ -34,6 +34,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.fulladdressBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.arsenDataSet9 = new PeopleCount.arsenDataSet9();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,22 +52,20 @@
             this.arsenDataSet8 = new PeopleCount.arsenDataSet8();
             this.fulladdressBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.full_addressTableAdapter1 = new PeopleCount.arsenDataSet8TableAdapters.full_addressTableAdapter();
-            this.arsenDataSet9 = new PeopleCount.arsenDataSet9();
-            this.fulladdressBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.full_addressTableAdapter2 = new PeopleCount.arsenDataSet9TableAdapters.full_addressTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.fulladdressBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fulladdressBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fulladdressBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fulladdressBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(224, 188);
+            this.textBox1.Location = new System.Drawing.Point(224, 218);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(116, 22);
             this.textBox1.TabIndex = 1;
@@ -83,7 +83,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(224, 216);
+            this.textBox2.Location = new System.Drawing.Point(224, 188);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(116, 22);
             this.textBox2.TabIndex = 3;
@@ -99,6 +99,16 @@
             this.comboBox1.TabIndex = 4;
             this.comboBox1.ValueMember = "address";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // fulladdressBindingSource2
+            // 
+            this.fulladdressBindingSource2.DataMember = "full_address";
+            this.fulladdressBindingSource2.DataSource = this.arsenDataSet9;
+            // 
+            // arsenDataSet9
+            // 
+            this.arsenDataSet9.DataSetName = "arsenDataSet9";
+            this.arsenDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -205,16 +215,6 @@
             // 
             this.full_addressTableAdapter1.ClearBeforeFill = true;
             // 
-            // arsenDataSet9
-            // 
-            this.arsenDataSet9.DataSetName = "arsenDataSet9";
-            this.arsenDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // fulladdressBindingSource2
-            // 
-            this.fulladdressBindingSource2.DataMember = "full_address";
-            this.fulladdressBindingSource2.DataSource = this.arsenDataSet9;
-            // 
             // full_addressTableAdapter2
             // 
             this.full_addressTableAdapter2.ClearBeforeFill = true;
@@ -237,16 +237,17 @@
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form6";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PeopleCount";
             this.Load += new System.EventHandler(this.Form6_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.fulladdressBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fulladdressBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fulladdressBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fulladdressBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
