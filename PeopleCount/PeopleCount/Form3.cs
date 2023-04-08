@@ -43,11 +43,10 @@ namespace PeopleCount
 
         }
 
+
         private void Form3_Load(object sender, EventArgs e)
         {
-            string url = "https://maps.google.com/maps?q=ул.+Кирова+2,+Сайсарский+округ,+Якутск,+Якутия,+Россия&output=embed";
-
-            webBrowser1.Navigate(url);
+        
         }
     }
 }

@@ -58,17 +58,28 @@ namespace PeopleCount
 
         private void button3_Click(object sender, EventArgs e)
         {
-            // Отображаем DataGridView
-            dataGridView1.Visible = true;
+            try
+            {
+                // Разрешаем редактирование
+                dataGridView1.ReadOnly = false;
 
-            // Разрешаем редактирование
-            dataGridView1.ReadOnly = false;
+                // Обновляем данные таблицы
+                this.newTableTableAdapter.Fill(this.arsenDataSet4.NewTable);
 
-            // Обновляем данные таблицы
-            this.newTableTableAdapter.Fill(this.arsenDataSet4.NewTable);
+                // Сохраняем изменения в базу данных
+                this.Validate();
+                this.newTableBindingSource.EndEdit();
+                this.newTableTableAdapter.Update(this.arsenDataSet4.NewTable);
 
-            // Сохраняем изменения в базу данных
-            this.newTableTableAdapter.Update(this.arsenDataSet4.NewTable);
+                // Отображаем DataGridView
+                dataGridView1.Visible = true;
+
+                MessageBox.Show("Changes saved successfully!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saving changes: " + ex.Message);
+            }
         }
     }
 }
