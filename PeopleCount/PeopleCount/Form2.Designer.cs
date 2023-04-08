@@ -97,7 +97,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(148, 66);
             this.button4.TabIndex = 4;
-            this.button4.Text = "официальные данные";
+            this.button4.Text = "фактическое количество жителей";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -174,11 +174,11 @@
             this.addrhou1DataGridViewTextBoxColumn,
             this.числожителейDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.newTableBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 31);
+            this.dataGridView1.Location = new System.Drawing.Point(52, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(648, 335);
+            this.dataGridView1.Size = new System.Drawing.Size(648, 484);
             this.dataGridView1.TabIndex = 7;
             // 
             // arsenDataSet4

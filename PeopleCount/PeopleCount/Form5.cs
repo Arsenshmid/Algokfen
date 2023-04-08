@@ -20,9 +20,16 @@ namespace PeopleCount
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide(); // Скрываем Form2
-            Form4 form1 = new Form4();
+            Form2 form1 = new Form2();
             form1.Show(); // Отображаем Form1
 
+
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "arsenDataSet5.счетчики". При необходимости она может быть перемещена или удалена.
+            this.счетчикиTableAdapter.Fill(this.arsenDataSet5.счетчики);
 
         }
     }
