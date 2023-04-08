@@ -76,6 +76,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>arsenDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="arsenDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arsenDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +211,17 @@
     </None>
     <None Include="arsenDataSet5.xss">
       <DependentUpon>arsenDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet6.xsc">
+      <DependentUpon>arsenDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arsenDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arsenDataSet6.xss">
+      <DependentUpon>arsenDataSet6.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
