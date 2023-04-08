@@ -1,4 +1,4 @@
-gid;fid;full_id;osm_id;osm_type;building;addr_stree;addr_postc;addr_hou_1;addr_city
+add;fid;full_id;osm_id;osm_type;building;addr_stree;addr_postc;addr_hou_1;addr_city
 434;434;w140964377;140964377;way;house;1-й јкадемический переулок;677008;11;якутск
 438;438;w140964386;140964386;way;house;1-й јкадемический переулок;677008;9;якутск
 440;440;w140964388;140964388;way;house;1-й јкадемический переулок;677008;13;якутск

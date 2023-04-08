@@ -37,5 +37,23 @@ namespace PeopleCount
             Form5 form1 = new Form5();
             form1.Show();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "arsenDataSet4.NewTable". При необходимости она может быть перемещена или удалена.
+            this.newTableTableAdapter.Fill(this.arsenDataSet4.NewTable);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "arsenDataSet3.NewSaisar". При необходимости она может быть перемещена или удалена.
+            this.newSaisarTableAdapter1.Fill(this.arsenDataSet3.NewSaisar);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "arsenDataSet2.NewSaisar". При необходимости она может быть перемещена или удалена.
+            this.newSaisarTableAdapter.Fill(this.arsenDataSet2.NewSaisar);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "arsenDataSet.saisar". При необходимости она может быть перемещена или удалена.
+            //this.saisarTableAdapter.Fill(this.arsenDataSet.saisar);
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

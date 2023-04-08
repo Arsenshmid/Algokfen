@@ -46,6 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="arsenDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arsenDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arsenDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arsenDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arsenDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arsenDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arsenDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arsenDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arsenDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arsenDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +136,61 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="arsenDataSet.xsc">
+      <DependentUpon>arsenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arsenDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arsenDataSet.xss">
+      <DependentUpon>arsenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet1.xsc">
+      <DependentUpon>arsenDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arsenDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arsenDataSet1.xss">
+      <DependentUpon>arsenDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet2.xsc">
+      <DependentUpon>arsenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arsenDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arsenDataSet2.xss">
+      <DependentUpon>arsenDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet3.xsc">
+      <DependentUpon>arsenDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arsenDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arsenDataSet3.xss">
+      <DependentUpon>arsenDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet4.xsc">
+      <DependentUpon>arsenDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arsenDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arsenDataSet4.xss">
+      <DependentUpon>arsenDataSet4.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

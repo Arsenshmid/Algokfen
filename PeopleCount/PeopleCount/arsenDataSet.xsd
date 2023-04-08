@@ -1,0 +1,1282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="arsenDataSet" targetNamespace="http://tempuri.org/arsenDataSet.xsd" xmlns:mstns="http://tempuri.org/arsenDataSet.xsd" xmlns="http://tempuri.org/arsenDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="arsenConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="arsenConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PeopleCount.Properties.Settings.GlobalReference.Default.arsenConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="saisarTableAdapter" GeneratorDataComponentClassName="saisarTableAdapter" Name="saisar" UserDataComponentName="saisarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="arsenConnectionString (Settings)" DbObjectName="arsen.dbo.saisar" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[saisar] (["gid"], ["fid"], ["full_id"], ["osm_id"], ["osm_type"], ["building"], ["constructi"], ["sport"], ["unisex"], ["toilets_ha"], ["toilets_di"], ["access"], ["outdoor_se"], ["amenity_1"], ["museum"], ["parking"], ["building_p"], ["preschool"], ["content"], ["payment_de"], ["payment_cr"], ["payment_ca"], ["opening_ho"], ["fuel_octan"], ["tower_type"], ["natural"], ["building_m"], ["diet_veget"], ["contact_tu"], ["historic"], ["landuse"], ["opening__1"], ["addr_house"], ["fee"], ["brand_wiki"], ["brand_wi_1"], ["brand_en"], ["takeaway"], ["cuisine"], ["wikipedia"], ["wikidata"], ["baby_feedi"], ["air_condit"], ["addr_unit"], ["fuel_oct_1"], ["fuel_oct_2"], ["fuel_oct_3"], ["fuel_lpg"], ["fuel_diese"], ["fuel_gtl_d"], ["brand"], ["drive_thro"], ["dispensing"], ["emergency"], ["grades"], ["loc_name"], ["building_f"], ["addr_neigh"], ["name_de"], ["addr_subur"], ["noname"], ["roof_colou"], ["roof_level"], ["generator_"], ["generato_1"], ["generato_2"], ["generato_3"], ["generato_4"], ["generato_5"], ["frequency"], ["contact_we"], ["contact_ph"], ["contact_em"], ["cooling_me"], ["voltage"], ["substation"], ["official_s"], ["public_tra"], ["harbour"], ["ferry"], ["roof_shape"], ["name_sah"], ["man_made"], ["military"], ["building_1"], ["administra"], ["architect"], ["contact_yo"], ["contact_vk"], ["contact_tw"], ["contact_te"], ["contact_ok"], ["contact_in"], ["contact_fa"], ["official_n"], ["aeroway"], ["generato_6"], ["smoking"], ["power"], ["disused_bu"], ["residentia"], ["alt_name"], ["religion"], ["denominati"], ["descriptio"], ["name_zh"], ["wheelchair"], ["ref_mkrf_t"], ["phone"], ["operator"], ["opening__2"], ["email"], ["shop"], ["healthcare"], ["government"], ["theatre_ge"], ["addr_count"], ["name_ru"], ["start_date"], ["tourism"], ["office"], ["short_name"], ["amenity"], ["website"], ["name_en"], ["leisure"], ["addr_place"], ["name"], ["layer"], ["height"], ["type"], ["building_l"], ["addr_stree"], ["addr_postc"], ["addr_hou_1"], ["addr_city"], ["geom"]) VALUES (@p1, @p4, @p7, @p10, @p13, @p16, @p19, @p22, @p25, @p28, @p31, @p34, @p37, @p40, @p43, @p46, @p49, @p52, @p55, @p58, @p61, @p64, @p67, @p70, @p73, @p76, @p79, @p82, @p85, @p88, @p91, @p94, @p97, @p100, @p103, @p106, @p109, @p112, @p115, @p118, @p121, @p124, @p127, @p130, @p133, @p136, @p139, @p142, @p145, @p148, @p151, @p154, @p157, @p160, @p163, @p166, @p169, @p172, @p175, @p178, @p181, @p184, @p187, @p190, @p193, @p196, @p199, @p202, @p205, @p208, @p211, @p214, @p217, @p220, @p223, @p226, @p229, @p232, @p235, @p238, @p241, @p244, @p247, @p250, @p253, @p256, @p259, @p262, @p265, @p268, @p271, @p274, @p277, @p280, @p283, @p286, @p289, @p292, @p295, @p298, @p301, @p304, @p307, @p310, @p313, @p316, @p319, @p322, @p325, @p328, @p331, @p334, @p337, @p340, @p343, @p346, @p349, @p352, @p355, @p358, @p361, @p364, @p367, @p370, @p373, @p376, @p379, @p382, @p385, @p388, @p391, @p394, @p397, @p400, @p403, @p406, @p409)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;gid&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;fid&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;full_id&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p10" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;osm_id&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p13" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;osm_type&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p16" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;building&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p19" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;constructi&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p22" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;sport&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p25" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;unisex&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p28" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;toilets_ha&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p31" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;toilets_di&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p34" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;access&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p37" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;outdoor_se&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p40" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;amenity_1&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p43" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;museum&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p46" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;parking&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p49" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;building_p&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p52" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;preschool&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p55" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;content&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p58" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;payment_de&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p61" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;payment_cr&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p64" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;payment_ca&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p67" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;opening_ho&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p70" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;fuel_octan&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p73" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;tower_type&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p76" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;natural&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p79" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;building_m&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p82" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;diet_veget&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p85" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;contact_tu&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p88" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;historic&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p91" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;landuse&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p94" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;opening__1&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p97" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;addr_house&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p100" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;fee&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p103" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;brand_wiki&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p106" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;brand_wi_1&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p109" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;brand_en&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p112" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;takeaway&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p115" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;cuisine&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p118" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;wikipedia&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p121" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;wikidata&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p124" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;baby_feedi&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p127" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;air_condit&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p130" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;addr_unit&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p133" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;fuel_oct_1&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p136" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;fuel_oct_2&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p139" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;fuel_oct_3&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p142" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;fuel_lpg&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p145" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;fuel_diese&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p148" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;fuel_gtl_d&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p151" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;brand&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p154" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;drive_thro&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p157" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;dispensing&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p160" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;emergency&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p163" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;grades&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p166" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;loc_name&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p169" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;building_f&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p172" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;addr_neigh&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p175" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;name_de&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p178" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;addr_subur&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p181" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;noname&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p184" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;roof_colou&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p187" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;roof_level&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p190" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;generator_&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p193" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;generato_1&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p196" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;generato_2&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p199" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;generato_3&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p202" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;generato_4&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p205" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;generato_5&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p208" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;frequency&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p211" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;contact_we&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p214" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;contact_ph&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p217" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;contact_em&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p220" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;cooling_me&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p223" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;voltage&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p226" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;substation&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p229" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;official_s&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p232" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;public_tra&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p235" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;harbour&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p238" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;ferry&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p241" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;roof_shape&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p244" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;name_sah&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p247" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;man_made&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p250" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;military&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p253" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;building_1&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p256" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;administra&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p259" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;architect&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p262" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;contact_yo&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p265" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;contact_vk&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p268" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;contact_tw&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p271" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;contact_te&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p274" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;contact_ok&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p277" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;contact_in&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p280" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;contact_fa&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p283" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;official_n&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p286" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;aeroway&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p289" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;generato_6&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p292" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;smoking&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p295" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;power&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p298" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;disused_bu&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p301" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;residentia&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p304" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;alt_name&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p307" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;religion&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p310" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;denominati&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p313" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;descriptio&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p316" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;name_zh&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p319" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;wheelchair&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p322" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;ref_mkrf_t&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p325" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;phone&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p328" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;operator&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p331" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;opening__2&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p334" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;email&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p337" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;shop&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p340" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;healthcare&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p343" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;government&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p346" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;theatre_ge&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p349" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;addr_count&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p352" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;name_ru&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p355" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;start_date&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p358" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;tourism&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p361" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;office&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p364" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;short_name&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p367" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;amenity&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p370" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;website&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p373" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;name_en&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p376" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;leisure&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p379" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;addr_place&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p382" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;name&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p385" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;layer&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p388" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;height&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p391" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;type&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p394" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;building_l&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p397" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;addr_stree&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p400" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;addr_postc&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p403" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;addr_hou_1&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p406" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;addr_city&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@p409" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="&quot;geom&quot;" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ["gid"], ["fid"], ["full_id"], ["osm_id"], ["osm_type"], ["building"], ["constructi"], ["sport"], ["unisex"], ["toilets_ha"], ["toilets_di"], ["access"], ["outdoor_se"], ["amenity_1"], ["museum"], ["parking"], ["building_p"], ["preschool"], ["content"], ["payment_de"], ["payment_cr"], ["payment_ca"], ["opening_ho"], ["fuel_octan"], ["tower_type"], ["natural"], ["building_m"], ["diet_veget"], ["contact_tu"], ["historic"], ["landuse"], ["opening__1"], ["addr_house"], ["fee"], ["brand_wiki"], ["brand_wi_1"], ["brand_en"], ["takeaway"], ["cuisine"], ["wikipedia"], ["wikidata"], ["baby_feedi"], ["air_condit"], ["addr_unit"], ["fuel_oct_1"], ["fuel_oct_2"], ["fuel_oct_3"], ["fuel_lpg"], ["fuel_diese"], ["fuel_gtl_d"], ["brand"], ["drive_thro"], ["dispensing"], ["emergency"], ["grades"], ["loc_name"], ["building_f"], ["addr_neigh"], ["name_de"], ["addr_subur"], ["noname"], ["roof_colou"], ["roof_level"], ["generator_"], ["generato_1"], ["generato_2"], ["generato_3"], ["generato_4"], ["generato_5"], ["frequency"], ["contact_we"], ["contact_ph"], ["contact_em"], ["cooling_me"], ["voltage"], ["substation"], ["official_s"], ["public_tra"], ["harbour"], ["ferry"], ["roof_shape"], ["name_sah"], ["man_made"], ["military"], ["building_1"], ["administra"], ["architect"], ["contact_yo"], ["contact_vk"], ["contact_tw"], ["contact_te"], ["contact_ok"], ["contact_in"], ["contact_fa"], ["official_n"], ["aeroway"], ["generato_6"], ["smoking"], ["power"], ["disused_bu"], ["residentia"], ["alt_name"], ["religion"], ["denominati"], ["descriptio"], ["name_zh"], ["wheelchair"], ["ref_mkrf_t"], ["phone"], ["operator"], ["opening__2"], ["email"], ["shop"], ["healthcare"], ["government"], ["theatre_ge"], ["addr_count"], ["name_ru"], ["start_date"], ["tourism"], ["office"], ["short_name"], ["amenity"], ["website"], ["name_en"], ["leisure"], ["addr_place"], ["name"], ["layer"], ["height"], ["type"], ["building_l"], ["addr_stree"], ["addr_postc"], ["addr_hou_1"], ["addr_city"], ["geom"] FROM dbo.saisar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="&quot;gid&quot;" DataSetColumn="&quot;gid&quot;" />
+              <Mapping SourceColumn="&quot;fid&quot;" DataSetColumn="&quot;fid&quot;" />
+              <Mapping SourceColumn="&quot;full_id&quot;" DataSetColumn="&quot;full_id&quot;" />
+              <Mapping SourceColumn="&quot;osm_id&quot;" DataSetColumn="&quot;osm_id&quot;" />
+              <Mapping SourceColumn="&quot;osm_type&quot;" DataSetColumn="&quot;osm_type&quot;" />
+              <Mapping SourceColumn="&quot;building&quot;" DataSetColumn="&quot;building&quot;" />
+              <Mapping SourceColumn="&quot;constructi&quot;" DataSetColumn="&quot;constructi&quot;" />
+              <Mapping SourceColumn="&quot;sport&quot;" DataSetColumn="&quot;sport&quot;" />
+              <Mapping SourceColumn="&quot;unisex&quot;" DataSetColumn="&quot;unisex&quot;" />
+              <Mapping SourceColumn="&quot;toilets_ha&quot;" DataSetColumn="&quot;toilets_ha&quot;" />
+              <Mapping SourceColumn="&quot;toilets_di&quot;" DataSetColumn="&quot;toilets_di&quot;" />
+              <Mapping SourceColumn="&quot;access&quot;" DataSetColumn="&quot;access&quot;" />
+              <Mapping SourceColumn="&quot;outdoor_se&quot;" DataSetColumn="&quot;outdoor_se&quot;" />
+              <Mapping SourceColumn="&quot;amenity_1&quot;" DataSetColumn="&quot;amenity_1&quot;" />
+              <Mapping SourceColumn="&quot;museum&quot;" DataSetColumn="&quot;museum&quot;" />
+              <Mapping SourceColumn="&quot;parking&quot;" DataSetColumn="&quot;parking&quot;" />
+              <Mapping SourceColumn="&quot;building_p&quot;" DataSetColumn="&quot;building_p&quot;" />
+              <Mapping SourceColumn="&quot;preschool&quot;" DataSetColumn="&quot;preschool&quot;" />
+              <Mapping SourceColumn="&quot;content&quot;" DataSetColumn="&quot;content&quot;" />
+              <Mapping SourceColumn="&quot;payment_de&quot;" DataSetColumn="&quot;payment_de&quot;" />
+              <Mapping SourceColumn="&quot;payment_cr&quot;" DataSetColumn="&quot;payment_cr&quot;" />
+              <Mapping SourceColumn="&quot;payment_ca&quot;" DataSetColumn="&quot;payment_ca&quot;" />
+              <Mapping SourceColumn="&quot;opening_ho&quot;" DataSetColumn="&quot;opening_ho&quot;" />
+              <Mapping SourceColumn="&quot;fuel_octan&quot;" DataSetColumn="&quot;fuel_octan&quot;" />
+              <Mapping SourceColumn="&quot;tower_type&quot;" DataSetColumn="&quot;tower_type&quot;" />
+              <Mapping SourceColumn="&quot;natural&quot;" DataSetColumn="&quot;natural&quot;" />
+              <Mapping SourceColumn="&quot;building_m&quot;" DataSetColumn="&quot;building_m&quot;" />
+              <Mapping SourceColumn="&quot;diet_veget&quot;" DataSetColumn="&quot;diet_veget&quot;" />
+              <Mapping SourceColumn="&quot;contact_tu&quot;" DataSetColumn="&quot;contact_tu&quot;" />
+              <Mapping SourceColumn="&quot;historic&quot;" DataSetColumn="&quot;historic&quot;" />
+              <Mapping SourceColumn="&quot;landuse&quot;" DataSetColumn="&quot;landuse&quot;" />
+              <Mapping SourceColumn="&quot;opening__1&quot;" DataSetColumn="&quot;opening__1&quot;" />
+              <Mapping SourceColumn="&quot;addr_house&quot;" DataSetColumn="&quot;addr_house&quot;" />
+              <Mapping SourceColumn="&quot;fee&quot;" DataSetColumn="&quot;fee&quot;" />
+              <Mapping SourceColumn="&quot;brand_wiki&quot;" DataSetColumn="&quot;brand_wiki&quot;" />
+              <Mapping SourceColumn="&quot;brand_wi_1&quot;" DataSetColumn="&quot;brand_wi_1&quot;" />
+              <Mapping SourceColumn="&quot;brand_en&quot;" DataSetColumn="&quot;brand_en&quot;" />
+              <Mapping SourceColumn="&quot;takeaway&quot;" DataSetColumn="&quot;takeaway&quot;" />
+              <Mapping SourceColumn="&quot;cuisine&quot;" DataSetColumn="&quot;cuisine&quot;" />
+              <Mapping SourceColumn="&quot;wikipedia&quot;" DataSetColumn="&quot;wikipedia&quot;" />
+              <Mapping SourceColumn="&quot;wikidata&quot;" DataSetColumn="&quot;wikidata&quot;" />
+              <Mapping SourceColumn="&quot;baby_feedi&quot;" DataSetColumn="&quot;baby_feedi&quot;" />
+              <Mapping SourceColumn="&quot;air_condit&quot;" DataSetColumn="&quot;air_condit&quot;" />
+              <Mapping SourceColumn="&quot;addr_unit&quot;" DataSetColumn="&quot;addr_unit&quot;" />
+              <Mapping SourceColumn="&quot;fuel_oct_1&quot;" DataSetColumn="&quot;fuel_oct_1&quot;" />
+              <Mapping SourceColumn="&quot;fuel_oct_2&quot;" DataSetColumn="&quot;fuel_oct_2&quot;" />
+              <Mapping SourceColumn="&quot;fuel_oct_3&quot;" DataSetColumn="&quot;fuel_oct_3&quot;" />
+              <Mapping SourceColumn="&quot;fuel_lpg&quot;" DataSetColumn="&quot;fuel_lpg&quot;" />
+              <Mapping SourceColumn="&quot;fuel_diese&quot;" DataSetColumn="&quot;fuel_diese&quot;" />
+              <Mapping SourceColumn="&quot;fuel_gtl_d&quot;" DataSetColumn="&quot;fuel_gtl_d&quot;" />
+              <Mapping SourceColumn="&quot;brand&quot;" DataSetColumn="&quot;brand&quot;" />
+              <Mapping SourceColumn="&quot;drive_thro&quot;" DataSetColumn="&quot;drive_thro&quot;" />
+              <Mapping SourceColumn="&quot;dispensing&quot;" DataSetColumn="&quot;dispensing&quot;" />
+              <Mapping SourceColumn="&quot;emergency&quot;" DataSetColumn="&quot;emergency&quot;" />
+              <Mapping SourceColumn="&quot;grades&quot;" DataSetColumn="&quot;grades&quot;" />
+              <Mapping SourceColumn="&quot;loc_name&quot;" DataSetColumn="&quot;loc_name&quot;" />
+              <Mapping SourceColumn="&quot;building_f&quot;" DataSetColumn="&quot;building_f&quot;" />
+              <Mapping SourceColumn="&quot;addr_neigh&quot;" DataSetColumn="&quot;addr_neigh&quot;" />
+              <Mapping SourceColumn="&quot;name_de&quot;" DataSetColumn="&quot;name_de&quot;" />
+              <Mapping SourceColumn="&quot;addr_subur&quot;" DataSetColumn="&quot;addr_subur&quot;" />
+              <Mapping SourceColumn="&quot;noname&quot;" DataSetColumn="&quot;noname&quot;" />
+              <Mapping SourceColumn="&quot;roof_colou&quot;" DataSetColumn="&quot;roof_colou&quot;" />
+              <Mapping SourceColumn="&quot;roof_level&quot;" DataSetColumn="&quot;roof_level&quot;" />
+              <Mapping SourceColumn="&quot;generator_&quot;" DataSetColumn="&quot;generator_&quot;" />
+              <Mapping SourceColumn="&quot;generato_1&quot;" DataSetColumn="&quot;generato_1&quot;" />
+              <Mapping SourceColumn="&quot;generato_2&quot;" DataSetColumn="&quot;generato_2&quot;" />
+              <Mapping SourceColumn="&quot;generato_3&quot;" DataSetColumn="&quot;generato_3&quot;" />
+              <Mapping SourceColumn="&quot;generato_4&quot;" DataSetColumn="&quot;generato_4&quot;" />
+              <Mapping SourceColumn="&quot;generato_5&quot;" DataSetColumn="&quot;generato_5&quot;" />
+              <Mapping SourceColumn="&quot;frequency&quot;" DataSetColumn="&quot;frequency&quot;" />
+              <Mapping SourceColumn="&quot;contact_we&quot;" DataSetColumn="&quot;contact_we&quot;" />
+              <Mapping SourceColumn="&quot;contact_ph&quot;" DataSetColumn="&quot;contact_ph&quot;" />
+              <Mapping SourceColumn="&quot;contact_em&quot;" DataSetColumn="&quot;contact_em&quot;" />
+              <Mapping SourceColumn="&quot;cooling_me&quot;" DataSetColumn="&quot;cooling_me&quot;" />
+              <Mapping SourceColumn="&quot;voltage&quot;" DataSetColumn="&quot;voltage&quot;" />
+              <Mapping SourceColumn="&quot;substation&quot;" DataSetColumn="&quot;substation&quot;" />
+              <Mapping SourceColumn="&quot;official_s&quot;" DataSetColumn="&quot;official_s&quot;" />
+              <Mapping SourceColumn="&quot;public_tra&quot;" DataSetColumn="&quot;public_tra&quot;" />
+              <Mapping SourceColumn="&quot;harbour&quot;" DataSetColumn="&quot;harbour&quot;" />
+              <Mapping SourceColumn="&quot;ferry&quot;" DataSetColumn="&quot;ferry&quot;" />
+              <Mapping SourceColumn="&quot;roof_shape&quot;" DataSetColumn="&quot;roof_shape&quot;" />
+              <Mapping SourceColumn="&quot;name_sah&quot;" DataSetColumn="&quot;name_sah&quot;" />
+              <Mapping SourceColumn="&quot;man_made&quot;" DataSetColumn="&quot;man_made&quot;" />
+              <Mapping SourceColumn="&quot;military&quot;" DataSetColumn="&quot;military&quot;" />
+              <Mapping SourceColumn="&quot;building_1&quot;" DataSetColumn="&quot;building_1&quot;" />
+              <Mapping SourceColumn="&quot;administra&quot;" DataSetColumn="&quot;administra&quot;" />
+              <Mapping SourceColumn="&quot;architect&quot;" DataSetColumn="&quot;architect&quot;" />
+              <Mapping SourceColumn="&quot;contact_yo&quot;" DataSetColumn="&quot;contact_yo&quot;" />
+              <Mapping SourceColumn="&quot;contact_vk&quot;" DataSetColumn="&quot;contact_vk&quot;" />
+              <Mapping SourceColumn="&quot;contact_tw&quot;" DataSetColumn="&quot;contact_tw&quot;" />
+              <Mapping SourceColumn="&quot;contact_te&quot;" DataSetColumn="&quot;contact_te&quot;" />
+              <Mapping SourceColumn="&quot;contact_ok&quot;" DataSetColumn="&quot;contact_ok&quot;" />
+              <Mapping SourceColumn="&quot;contact_in&quot;" DataSetColumn="&quot;contact_in&quot;" />
+              <Mapping SourceColumn="&quot;contact_fa&quot;" DataSetColumn="&quot;contact_fa&quot;" />
+              <Mapping SourceColumn="&quot;official_n&quot;" DataSetColumn="&quot;official_n&quot;" />
+              <Mapping SourceColumn="&quot;aeroway&quot;" DataSetColumn="&quot;aeroway&quot;" />
+              <Mapping SourceColumn="&quot;generato_6&quot;" DataSetColumn="&quot;generato_6&quot;" />
+              <Mapping SourceColumn="&quot;smoking&quot;" DataSetColumn="&quot;smoking&quot;" />
+              <Mapping SourceColumn="&quot;power&quot;" DataSetColumn="&quot;power&quot;" />
+              <Mapping SourceColumn="&quot;disused_bu&quot;" DataSetColumn="&quot;disused_bu&quot;" />
+              <Mapping SourceColumn="&quot;residentia&quot;" DataSetColumn="&quot;residentia&quot;" />
+              <Mapping SourceColumn="&quot;alt_name&quot;" DataSetColumn="&quot;alt_name&quot;" />
+              <Mapping SourceColumn="&quot;religion&quot;" DataSetColumn="&quot;religion&quot;" />
+              <Mapping SourceColumn="&quot;denominati&quot;" DataSetColumn="&quot;denominati&quot;" />
+              <Mapping SourceColumn="&quot;descriptio&quot;" DataSetColumn="&quot;descriptio&quot;" />
+              <Mapping SourceColumn="&quot;name_zh&quot;" DataSetColumn="&quot;name_zh&quot;" />
+              <Mapping SourceColumn="&quot;wheelchair&quot;" DataSetColumn="&quot;wheelchair&quot;" />
+              <Mapping SourceColumn="&quot;ref_mkrf_t&quot;" DataSetColumn="&quot;ref_mkrf_t&quot;" />
+              <Mapping SourceColumn="&quot;phone&quot;" DataSetColumn="&quot;phone&quot;" />
+              <Mapping SourceColumn="&quot;operator&quot;" DataSetColumn="&quot;operator&quot;" />
+              <Mapping SourceColumn="&quot;opening__2&quot;" DataSetColumn="&quot;opening__2&quot;" />
+              <Mapping SourceColumn="&quot;email&quot;" DataSetColumn="&quot;email&quot;" />
+              <Mapping SourceColumn="&quot;shop&quot;" DataSetColumn="&quot;shop&quot;" />
+              <Mapping SourceColumn="&quot;healthcare&quot;" DataSetColumn="&quot;healthcare&quot;" />
+              <Mapping SourceColumn="&quot;government&quot;" DataSetColumn="&quot;government&quot;" />
+              <Mapping SourceColumn="&quot;theatre_ge&quot;" DataSetColumn="&quot;theatre_ge&quot;" />
+              <Mapping SourceColumn="&quot;addr_count&quot;" DataSetColumn="&quot;addr_count&quot;" />
+              <Mapping SourceColumn="&quot;name_ru&quot;" DataSetColumn="&quot;name_ru&quot;" />
+              <Mapping SourceColumn="&quot;start_date&quot;" DataSetColumn="&quot;start_date&quot;" />
+              <Mapping SourceColumn="&quot;tourism&quot;" DataSetColumn="&quot;tourism&quot;" />
+              <Mapping SourceColumn="&quot;office&quot;" DataSetColumn="&quot;office&quot;" />
+              <Mapping SourceColumn="&quot;short_name&quot;" DataSetColumn="&quot;short_name&quot;" />
+              <Mapping SourceColumn="&quot;amenity&quot;" DataSetColumn="&quot;amenity&quot;" />
+              <Mapping SourceColumn="&quot;website&quot;" DataSetColumn="&quot;website&quot;" />
+              <Mapping SourceColumn="&quot;name_en&quot;" DataSetColumn="&quot;name_en&quot;" />
+              <Mapping SourceColumn="&quot;leisure&quot;" DataSetColumn="&quot;leisure&quot;" />
+              <Mapping SourceColumn="&quot;addr_place&quot;" DataSetColumn="&quot;addr_place&quot;" />
+              <Mapping SourceColumn="&quot;name&quot;" DataSetColumn="&quot;name&quot;" />
+              <Mapping SourceColumn="&quot;layer&quot;" DataSetColumn="&quot;layer&quot;" />
+              <Mapping SourceColumn="&quot;height&quot;" DataSetColumn="&quot;height&quot;" />
+              <Mapping SourceColumn="&quot;type&quot;" DataSetColumn="&quot;type&quot;" />
+              <Mapping SourceColumn="&quot;building_l&quot;" DataSetColumn="&quot;building_l&quot;" />
+              <Mapping SourceColumn="&quot;addr_stree&quot;" DataSetColumn="&quot;addr_stree&quot;" />
+              <Mapping SourceColumn="&quot;addr_postc&quot;" DataSetColumn="&quot;addr_postc&quot;" />
+              <Mapping SourceColumn="&quot;addr_hou_1&quot;" DataSetColumn="&quot;addr_hou_1&quot;" />
+              <Mapping SourceColumn="&quot;addr_city&quot;" DataSetColumn="&quot;addr_city&quot;" />
+              <Mapping SourceColumn="&quot;geom&quot;" DataSetColumn="&quot;geom&quot;" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="arsenDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="arsenDataSet" msprop:Generator_DataSetName="arsenDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="saisar" msprop:Generator_RowEvHandlerName="saisarRowChangeEventHandler" msprop:Generator_RowDeletedName="saisarRowDeleted" msprop:Generator_RowDeletingName="saisarRowDeleting" msprop:Generator_RowEvArgName="saisarRowChangeEvent" msprop:Generator_TablePropName="saisar" msprop:Generator_RowChangedName="saisarRowChanged" msprop:Generator_RowChangingName="saisarRowChanging" msprop:Generator_TableClassName="saisarDataTable" msprop:Generator_RowClassName="saisarRow" msprop:Generator_TableVarName="tablesaisar" msprop:Generator_UserTableName="saisar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0022_gid_x0022_" msprop:Generator_ColumnPropNameInRow="__gid_" msprop:Generator_ColumnPropNameInTable="__gid_Column" msprop:Generator_ColumnVarNameInTable="_column_gid_" msprop:Generator_UserColumnName="&quot;gid&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_fid_x0022_" msprop:Generator_ColumnPropNameInRow="__fid_" msprop:Generator_ColumnPropNameInTable="__fid_Column" msprop:Generator_ColumnVarNameInTable="_column_fid_" msprop:Generator_UserColumnName="&quot;fid&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_full_id_x0022_" msprop:Generator_ColumnPropNameInRow="__full_id_" msprop:Generator_ColumnPropNameInTable="__full_id_Column" msprop:Generator_ColumnVarNameInTable="_column_full_id_" msprop:Generator_UserColumnName="&quot;full_id&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_osm_id_x0022_" msprop:Generator_ColumnPropNameInRow="__osm_id_" msprop:Generator_ColumnPropNameInTable="__osm_id_Column" msprop:Generator_ColumnVarNameInTable="_column_osm_id_" msprop:Generator_UserColumnName="&quot;osm_id&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_osm_type_x0022_" msprop:Generator_ColumnPropNameInRow="__osm_type_" msprop:Generator_ColumnPropNameInTable="__osm_type_Column" msprop:Generator_ColumnVarNameInTable="_column_osm_type_" msprop:Generator_UserColumnName="&quot;osm_type&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_building_x0022_" msprop:Generator_ColumnPropNameInRow="__building_" msprop:Generator_ColumnPropNameInTable="__building_Column" msprop:Generator_ColumnVarNameInTable="_column_building_" msprop:Generator_UserColumnName="&quot;building&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_constructi_x0022_" msprop:Generator_ColumnPropNameInRow="__constructi_" msprop:Generator_ColumnPropNameInTable="__constructi_Column" msprop:Generator_ColumnVarNameInTable="_column_constructi_" msprop:Generator_UserColumnName="&quot;constructi&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_sport_x0022_" msprop:Generator_ColumnPropNameInRow="__sport_" msprop:Generator_ColumnPropNameInTable="__sport_Column" msprop:Generator_ColumnVarNameInTable="_column_sport_" msprop:Generator_UserColumnName="&quot;sport&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_unisex_x0022_" msprop:Generator_ColumnPropNameInRow="__unisex_" msprop:Generator_ColumnPropNameInTable="__unisex_Column" msprop:Generator_ColumnVarNameInTable="_column_unisex_" msprop:Generator_UserColumnName="&quot;unisex&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_toilets_ha_x0022_" msprop:Generator_ColumnPropNameInRow="__toilets_ha_" msprop:Generator_ColumnPropNameInTable="__toilets_ha_Column" msprop:Generator_ColumnVarNameInTable="_column_toilets_ha_" msprop:Generator_UserColumnName="&quot;toilets_ha&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_toilets_di_x0022_" msprop:Generator_ColumnPropNameInRow="__toilets_di_" msprop:Generator_ColumnPropNameInTable="__toilets_di_Column" msprop:Generator_ColumnVarNameInTable="_column_toilets_di_" msprop:Generator_UserColumnName="&quot;toilets_di&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_access_x0022_" msprop:Generator_ColumnPropNameInRow="__access_" msprop:Generator_ColumnPropNameInTable="__access_Column" msprop:Generator_ColumnVarNameInTable="_column_access_" msprop:Generator_UserColumnName="&quot;access&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_outdoor_se_x0022_" msprop:Generator_ColumnPropNameInRow="__outdoor_se_" msprop:Generator_ColumnPropNameInTable="__outdoor_se_Column" msprop:Generator_ColumnVarNameInTable="_column_outdoor_se_" msprop:Generator_UserColumnName="&quot;outdoor_se&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_amenity_1_x0022_" msprop:Generator_ColumnPropNameInRow="__amenity_1_" msprop:Generator_ColumnPropNameInTable="__amenity_1_Column" msprop:Generator_ColumnVarNameInTable="_column_amenity_1_" msprop:Generator_UserColumnName="&quot;amenity_1&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_museum_x0022_" msprop:Generator_ColumnPropNameInRow="__museum_" msprop:Generator_ColumnPropNameInTable="__museum_Column" msprop:Generator_ColumnVarNameInTable="_column_museum_" msprop:Generator_UserColumnName="&quot;museum&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_parking_x0022_" msprop:Generator_ColumnPropNameInRow="__parking_" msprop:Generator_ColumnPropNameInTable="__parking_Column" msprop:Generator_ColumnVarNameInTable="_column_parking_" msprop:Generator_UserColumnName="&quot;parking&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_building_p_x0022_" msprop:Generator_ColumnPropNameInRow="__building_p_" msprop:Generator_ColumnPropNameInTable="__building_p_Column" msprop:Generator_ColumnVarNameInTable="_column_building_p_" msprop:Generator_UserColumnName="&quot;building_p&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_preschool_x0022_" msprop:Generator_ColumnPropNameInRow="__preschool_" msprop:Generator_ColumnPropNameInTable="__preschool_Column" msprop:Generator_ColumnVarNameInTable="_column_preschool_" msprop:Generator_UserColumnName="&quot;preschool&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_content_x0022_" msprop:Generator_ColumnPropNameInRow="__content_" msprop:Generator_ColumnPropNameInTable="__content_Column" msprop:Generator_ColumnVarNameInTable="_column_content_" msprop:Generator_UserColumnName="&quot;content&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_payment_de_x0022_" msprop:Generator_ColumnPropNameInRow="__payment_de_" msprop:Generator_ColumnPropNameInTable="__payment_de_Column" msprop:Generator_ColumnVarNameInTable="_column_payment_de_" msprop:Generator_UserColumnName="&quot;payment_de&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_payment_cr_x0022_" msprop:Generator_ColumnPropNameInRow="__payment_cr_" msprop:Generator_ColumnPropNameInTable="__payment_cr_Column" msprop:Generator_ColumnVarNameInTable="_column_payment_cr_" msprop:Generator_UserColumnName="&quot;payment_cr&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_payment_ca_x0022_" msprop:Generator_ColumnPropNameInRow="__payment_ca_" msprop:Generator_ColumnPropNameInTable="__payment_ca_Column" msprop:Generator_ColumnVarNameInTable="_column_payment_ca_" msprop:Generator_UserColumnName="&quot;payment_ca&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_opening_ho_x0022_" msprop:Generator_ColumnPropNameInRow="__opening_ho_" msprop:Generator_ColumnPropNameInTable="__opening_ho_Column" msprop:Generator_ColumnVarNameInTable="_column_opening_ho_" msprop:Generator_UserColumnName="&quot;opening_ho&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_fuel_octan_x0022_" msprop:Generator_ColumnPropNameInRow="__fuel_octan_" msprop:Generator_ColumnPropNameInTable="__fuel_octan_Column" msprop:Generator_ColumnVarNameInTable="_column_fuel_octan_" msprop:Generator_UserColumnName="&quot;fuel_octan&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_tower_type_x0022_" msprop:Generator_ColumnPropNameInRow="__tower_type_" msprop:Generator_ColumnPropNameInTable="__tower_type_Column" msprop:Generator_ColumnVarNameInTable="_column_tower_type_" msprop:Generator_UserColumnName="&quot;tower_type&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_natural_x0022_" msprop:Generator_ColumnPropNameInRow="__natural_" msprop:Generator_ColumnPropNameInTable="__natural_Column" msprop:Generator_ColumnVarNameInTable="_column_natural_" msprop:Generator_UserColumnName="&quot;natural&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_building_m_x0022_" msprop:Generator_ColumnPropNameInRow="__building_m_" msprop:Generator_ColumnPropNameInTable="__building_m_Column" msprop:Generator_ColumnVarNameInTable="_column_building_m_" msprop:Generator_UserColumnName="&quot;building_m&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_diet_veget_x0022_" msprop:Generator_ColumnPropNameInRow="__diet_veget_" msprop:Generator_ColumnPropNameInTable="__diet_veget_Column" msprop:Generator_ColumnVarNameInTable="_column_diet_veget_" msprop:Generator_UserColumnName="&quot;diet_veget&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_contact_tu_x0022_" msprop:Generator_ColumnPropNameInRow="__contact_tu_" msprop:Generator_ColumnPropNameInTable="__contact_tu_Column" msprop:Generator_ColumnVarNameInTable="_column_contact_tu_" msprop:Generator_UserColumnName="&quot;contact_tu&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_historic_x0022_" msprop:Generator_ColumnPropNameInRow="__historic_" msprop:Generator_ColumnPropNameInTable="__historic_Column" msprop:Generator_ColumnVarNameInTable="_column_historic_" msprop:Generator_UserColumnName="&quot;historic&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_landuse_x0022_" msprop:Generator_ColumnPropNameInRow="__landuse_" msprop:Generator_ColumnPropNameInTable="__landuse_Column" msprop:Generator_ColumnVarNameInTable="_column_landuse_" msprop:Generator_UserColumnName="&quot;landuse&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_opening__1_x0022_" msprop:Generator_ColumnPropNameInRow="__opening__1_" msprop:Generator_ColumnPropNameInTable="__opening__1_Column" msprop:Generator_ColumnVarNameInTable="_column_opening__1_" msprop:Generator_UserColumnName="&quot;opening__1&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_addr_house_x0022_" msprop:Generator_ColumnPropNameInRow="__addr_house_" msprop:Generator_ColumnPropNameInTable="__addr_house_Column" msprop:Generator_ColumnVarNameInTable="_column_addr_house_" msprop:Generator_UserColumnName="&quot;addr_house&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_fee_x0022_" msprop:Generator_ColumnPropNameInRow="__fee_" msprop:Generator_ColumnPropNameInTable="__fee_Column" msprop:Generator_ColumnVarNameInTable="_column_fee_" msprop:Generator_UserColumnName="&quot;fee&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_brand_wiki_x0022_" msprop:Generator_ColumnPropNameInRow="__brand_wiki_" msprop:Generator_ColumnPropNameInTable="__brand_wiki_Column" msprop:Generator_ColumnVarNameInTable="_column_brand_wiki_" msprop:Generator_UserColumnName="&quot;brand_wiki&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_brand_wi_1_x0022_" msprop:Generator_ColumnPropNameInRow="__brand_wi_1_" msprop:Generator_ColumnPropNameInTable="__brand_wi_1_Column" msprop:Generator_ColumnVarNameInTable="_column_brand_wi_1_" msprop:Generator_UserColumnName="&quot;brand_wi_1&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_brand_en_x0022_" msprop:Generator_ColumnPropNameInRow="__brand_en_" msprop:Generator_ColumnPropNameInTable="__brand_en_Column" msprop:Generator_ColumnVarNameInTable="_column_brand_en_" msprop:Generator_UserColumnName="&quot;brand_en&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_takeaway_x0022_" msprop:Generator_ColumnPropNameInRow="__takeaway_" msprop:Generator_ColumnPropNameInTable="__takeaway_Column" msprop:Generator_ColumnVarNameInTable="_column_takeaway_" msprop:Generator_UserColumnName="&quot;takeaway&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_cuisine_x0022_" msprop:Generator_ColumnPropNameInRow="__cuisine_" msprop:Generator_ColumnPropNameInTable="__cuisine_Column" msprop:Generator_ColumnVarNameInTable="_column_cuisine_" msprop:Generator_UserColumnName="&quot;cuisine&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_wikipedia_x0022_" msprop:Generator_ColumnPropNameInRow="__wikipedia_" msprop:Generator_ColumnPropNameInTable="__wikipedia_Column" msprop:Generator_ColumnVarNameInTable="_column_wikipedia_" msprop:Generator_UserColumnName="&quot;wikipedia&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_wikidata_x0022_" msprop:Generator_ColumnPropNameInRow="__wikidata_" msprop:Generator_ColumnPropNameInTable="__wikidata_Column" msprop:Generator_ColumnVarNameInTable="_column_wikidata_" msprop:Generator_UserColumnName="&quot;wikidata&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_baby_feedi_x0022_" msprop:Generator_ColumnPropNameInRow="__baby_feedi_" msprop:Generator_ColumnPropNameInTable="__baby_feedi_Column" msprop:Generator_ColumnVarNameInTable="_column_baby_feedi_" msprop:Generator_UserColumnName="&quot;baby_feedi&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_air_condit_x0022_" msprop:Generator_ColumnPropNameInRow="__air_condit_" msprop:Generator_ColumnPropNameInTable="__air_condit_Column" msprop:Generator_ColumnVarNameInTable="_column_air_condit_" msprop:Generator_UserColumnName="&quot;air_condit&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_addr_unit_x0022_" msprop:Generator_ColumnPropNameInRow="__addr_unit_" msprop:Generator_ColumnPropNameInTable="__addr_unit_Column" msprop:Generator_ColumnVarNameInTable="_column_addr_unit_" msprop:Generator_UserColumnName="&quot;addr_unit&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_fuel_oct_1_x0022_" msprop:Generator_ColumnPropNameInRow="__fuel_oct_1_" msprop:Generator_ColumnPropNameInTable="__fuel_oct_1_Column" msprop:Generator_ColumnVarNameInTable="_column_fuel_oct_1_" msprop:Generator_UserColumnName="&quot;fuel_oct_1&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_fuel_oct_2_x0022_" msprop:Generator_ColumnPropNameInRow="__fuel_oct_2_" msprop:Generator_ColumnPropNameInTable="__fuel_oct_2_Column" msprop:Generator_ColumnVarNameInTable="_column_fuel_oct_2_" msprop:Generator_UserColumnName="&quot;fuel_oct_2&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_fuel_oct_3_x0022_" msprop:Generator_ColumnPropNameInRow="__fuel_oct_3_" msprop:Generator_ColumnPropNameInTable="__fuel_oct_3_Column" msprop:Generator_ColumnVarNameInTable="_column_fuel_oct_3_" msprop:Generator_UserColumnName="&quot;fuel_oct_3&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_fuel_lpg_x0022_" msprop:Generator_ColumnPropNameInRow="__fuel_lpg_" msprop:Generator_ColumnPropNameInTable="__fuel_lpg_Column" msprop:Generator_ColumnVarNameInTable="_column_fuel_lpg_" msprop:Generator_UserColumnName="&quot;fuel_lpg&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_fuel_diese_x0022_" msprop:Generator_ColumnPropNameInRow="__fuel_diese_" msprop:Generator_ColumnPropNameInTable="__fuel_diese_Column" msprop:Generator_ColumnVarNameInTable="_column_fuel_diese_" msprop:Generator_UserColumnName="&quot;fuel_diese&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_fuel_gtl_d_x0022_" msprop:Generator_ColumnPropNameInRow="__fuel_gtl_d_" msprop:Generator_ColumnPropNameInTable="__fuel_gtl_d_Column" msprop:Generator_ColumnVarNameInTable="_column_fuel_gtl_d_" msprop:Generator_UserColumnName="&quot;fuel_gtl_d&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_brand_x0022_" msprop:Generator_ColumnPropNameInRow="__brand_" msprop:Generator_ColumnPropNameInTable="__brand_Column" msprop:Generator_ColumnVarNameInTable="_column_brand_" msprop:Generator_UserColumnName="&quot;brand&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_drive_thro_x0022_" msprop:Generator_ColumnPropNameInRow="__drive_thro_" msprop:Generator_ColumnPropNameInTable="__drive_thro_Column" msprop:Generator_ColumnVarNameInTable="_column_drive_thro_" msprop:Generator_UserColumnName="&quot;drive_thro&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_dispensing_x0022_" msprop:Generator_ColumnPropNameInRow="__dispensing_" msprop:Generator_ColumnPropNameInTable="__dispensing_Column" msprop:Generator_ColumnVarNameInTable="_column_dispensing_" msprop:Generator_UserColumnName="&quot;dispensing&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_emergency_x0022_" msprop:Generator_ColumnPropNameInRow="__emergency_" msprop:Generator_ColumnPropNameInTable="__emergency_Column" msprop:Generator_ColumnVarNameInTable="_column_emergency_" msprop:Generator_UserColumnName="&quot;emergency&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_grades_x0022_" msprop:Generator_ColumnPropNameInRow="__grades_" msprop:Generator_ColumnPropNameInTable="__grades_Column" msprop:Generator_ColumnVarNameInTable="_column_grades_" msprop:Generator_UserColumnName="&quot;grades&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_loc_name_x0022_" msprop:Generator_ColumnPropNameInRow="__loc_name_" msprop:Generator_ColumnPropNameInTable="__loc_name_Column" msprop:Generator_ColumnVarNameInTable="_column_loc_name_" msprop:Generator_UserColumnName="&quot;loc_name&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_building_f_x0022_" msprop:Generator_ColumnPropNameInRow="__building_f_" msprop:Generator_ColumnPropNameInTable="__building_f_Column" msprop:Generator_ColumnVarNameInTable="_column_building_f_" msprop:Generator_UserColumnName="&quot;building_f&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_addr_neigh_x0022_" msprop:Generator_ColumnPropNameInRow="__addr_neigh_" msprop:Generator_ColumnPropNameInTable="__addr_neigh_Column" msprop:Generator_ColumnVarNameInTable="_column_addr_neigh_" msprop:Generator_UserColumnName="&quot;addr_neigh&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_name_de_x0022_" msprop:Generator_ColumnPropNameInRow="__name_de_" msprop:Generator_ColumnPropNameInTable="__name_de_Column" msprop:Generator_ColumnVarNameInTable="_column_name_de_" msprop:Generator_UserColumnName="&quot;name_de&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_addr_subur_x0022_" msprop:Generator_ColumnPropNameInRow="__addr_subur_" msprop:Generator_ColumnPropNameInTable="__addr_subur_Column" msprop:Generator_ColumnVarNameInTable="_column_addr_subur_" msprop:Generator_UserColumnName="&quot;addr_subur&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_noname_x0022_" msprop:Generator_ColumnPropNameInRow="__noname_" msprop:Generator_ColumnPropNameInTable="__noname_Column" msprop:Generator_ColumnVarNameInTable="_column_noname_" msprop:Generator_UserColumnName="&quot;noname&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_roof_colou_x0022_" msprop:Generator_ColumnPropNameInRow="__roof_colou_" msprop:Generator_ColumnPropNameInTable="__roof_colou_Column" msprop:Generator_ColumnVarNameInTable="_column_roof_colou_" msprop:Generator_UserColumnName="&quot;roof_colou&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_roof_level_x0022_" msprop:Generator_ColumnPropNameInRow="__roof_level_" msprop:Generator_ColumnPropNameInTable="__roof_level_Column" msprop:Generator_ColumnVarNameInTable="_column_roof_level_" msprop:Generator_UserColumnName="&quot;roof_level&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_generator__x0022_" msprop:Generator_ColumnPropNameInRow="__generator__" msprop:Generator_ColumnPropNameInTable="__generator__Column" msprop:Generator_ColumnVarNameInTable="_column_generator__" msprop:Generator_UserColumnName="&quot;generator_&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_generato_1_x0022_" msprop:Generator_ColumnPropNameInRow="__generato_1_" msprop:Generator_ColumnPropNameInTable="__generato_1_Column" msprop:Generator_ColumnVarNameInTable="_column_generato_1_" msprop:Generator_UserColumnName="&quot;generato_1&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_generato_2_x0022_" msprop:Generator_ColumnPropNameInRow="__generato_2_" msprop:Generator_ColumnPropNameInTable="__generato_2_Column" msprop:Generator_ColumnVarNameInTable="_column_generato_2_" msprop:Generator_UserColumnName="&quot;generato_2&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_generato_3_x0022_" msprop:Generator_ColumnPropNameInRow="__generato_3_" msprop:Generator_ColumnPropNameInTable="__generato_3_Column" msprop:Generator_ColumnVarNameInTable="_column_generato_3_" msprop:Generator_UserColumnName="&quot;generato_3&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_generato_4_x0022_" msprop:Generator_ColumnPropNameInRow="__generato_4_" msprop:Generator_ColumnPropNameInTable="__generato_4_Column" msprop:Generator_ColumnVarNameInTable="_column_generato_4_" msprop:Generator_UserColumnName="&quot;generato_4&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_generato_5_x0022_" msprop:Generator_ColumnPropNameInRow="__generato_5_" msprop:Generator_ColumnPropNameInTable="__generato_5_Column" msprop:Generator_ColumnVarNameInTable="_column_generato_5_" msprop:Generator_UserColumnName="&quot;generato_5&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_frequency_x0022_" msprop:Generator_ColumnPropNameInRow="__frequency_" msprop:Generator_ColumnPropNameInTable="__frequency_Column" msprop:Generator_ColumnVarNameInTable="_column_frequency_" msprop:Generator_UserColumnName="&quot;frequency&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_contact_we_x0022_" msprop:Generator_ColumnPropNameInRow="__contact_we_" msprop:Generator_ColumnPropNameInTable="__contact_we_Column" msprop:Generator_ColumnVarNameInTable="_column_contact_we_" msprop:Generator_UserColumnName="&quot;contact_we&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_contact_ph_x0022_" msprop:Generator_ColumnPropNameInRow="__contact_ph_" msprop:Generator_ColumnPropNameInTable="__contact_ph_Column" msprop:Generator_ColumnVarNameInTable="_column_contact_ph_" msprop:Generator_UserColumnName="&quot;contact_ph&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_contact_em_x0022_" msprop:Generator_ColumnPropNameInRow="__contact_em_" msprop:Generator_ColumnPropNameInTable="__contact_em_Column" msprop:Generator_ColumnVarNameInTable="_column_contact_em_" msprop:Generator_UserColumnName="&quot;contact_em&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_cooling_me_x0022_" msprop:Generator_ColumnPropNameInRow="__cooling_me_" msprop:Generator_ColumnPropNameInTable="__cooling_me_Column" msprop:Generator_ColumnVarNameInTable="_column_cooling_me_" msprop:Generator_UserColumnName="&quot;cooling_me&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_voltage_x0022_" msprop:Generator_ColumnPropNameInRow="__voltage_" msprop:Generator_ColumnPropNameInTable="__voltage_Column" msprop:Generator_ColumnVarNameInTable="_column_voltage_" msprop:Generator_UserColumnName="&quot;voltage&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_substation_x0022_" msprop:Generator_ColumnPropNameInRow="__substation_" msprop:Generator_ColumnPropNameInTable="__substation_Column" msprop:Generator_ColumnVarNameInTable="_column_substation_" msprop:Generator_UserColumnName="&quot;substation&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_official_s_x0022_" msprop:Generator_ColumnPropNameInRow="__official_s_" msprop:Generator_ColumnPropNameInTable="__official_s_Column" msprop:Generator_ColumnVarNameInTable="_column_official_s_" msprop:Generator_UserColumnName="&quot;official_s&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_public_tra_x0022_" msprop:Generator_ColumnPropNameInRow="__public_tra_" msprop:Generator_ColumnPropNameInTable="__public_tra_Column" msprop:Generator_ColumnVarNameInTable="_column_public_tra_" msprop:Generator_UserColumnName="&quot;public_tra&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_harbour_x0022_" msprop:Generator_ColumnPropNameInRow="__harbour_" msprop:Generator_ColumnPropNameInTable="__harbour_Column" msprop:Generator_ColumnVarNameInTable="_column_harbour_" msprop:Generator_UserColumnName="&quot;harbour&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_ferry_x0022_" msprop:Generator_ColumnPropNameInRow="__ferry_" msprop:Generator_ColumnPropNameInTable="__ferry_Column" msprop:Generator_ColumnVarNameInTable="_column_ferry_" msprop:Generator_UserColumnName="&quot;ferry&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_roof_shape_x0022_" msprop:Generator_ColumnPropNameInRow="__roof_shape_" msprop:Generator_ColumnPropNameInTable="__roof_shape_Column" msprop:Generator_ColumnVarNameInTable="_column_roof_shape_" msprop:Generator_UserColumnName="&quot;roof_shape&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_name_sah_x0022_" msprop:Generator_ColumnPropNameInRow="__name_sah_" msprop:Generator_ColumnPropNameInTable="__name_sah_Column" msprop:Generator_ColumnVarNameInTable="_column_name_sah_" msprop:Generator_UserColumnName="&quot;name_sah&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_man_made_x0022_" msprop:Generator_ColumnPropNameInRow="__man_made_" msprop:Generator_ColumnPropNameInTable="__man_made_Column" msprop:Generator_ColumnVarNameInTable="_column_man_made_" msprop:Generator_UserColumnName="&quot;man_made&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_military_x0022_" msprop:Generator_ColumnPropNameInRow="__military_" msprop:Generator_ColumnPropNameInTable="__military_Column" msprop:Generator_ColumnVarNameInTable="_column_military_" msprop:Generator_UserColumnName="&quot;military&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_building_1_x0022_" msprop:Generator_ColumnPropNameInRow="__building_1_" msprop:Generator_ColumnPropNameInTable="__building_1_Column" msprop:Generator_ColumnVarNameInTable="_column_building_1_" msprop:Generator_UserColumnName="&quot;building_1&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_administra_x0022_" msprop:Generator_ColumnPropNameInRow="__administra_" msprop:Generator_ColumnPropNameInTable="__administra_Column" msprop:Generator_ColumnVarNameInTable="_column_administra_" msprop:Generator_UserColumnName="&quot;administra&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_architect_x0022_" msprop:Generator_ColumnPropNameInRow="__architect_" msprop:Generator_ColumnPropNameInTable="__architect_Column" msprop:Generator_ColumnVarNameInTable="_column_architect_" msprop:Generator_UserColumnName="&quot;architect&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_contact_yo_x0022_" msprop:Generator_ColumnPropNameInRow="__contact_yo_" msprop:Generator_ColumnPropNameInTable="__contact_yo_Column" msprop:Generator_ColumnVarNameInTable="_column_contact_yo_" msprop:Generator_UserColumnName="&quot;contact_yo&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_contact_vk_x0022_" msprop:Generator_ColumnPropNameInRow="__contact_vk_" msprop:Generator_ColumnPropNameInTable="__contact_vk_Column" msprop:Generator_ColumnVarNameInTable="_column_contact_vk_" msprop:Generator_UserColumnName="&quot;contact_vk&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_contact_tw_x0022_" msprop:Generator_ColumnPropNameInRow="__contact_tw_" msprop:Generator_ColumnPropNameInTable="__contact_tw_Column" msprop:Generator_ColumnVarNameInTable="_column_contact_tw_" msprop:Generator_UserColumnName="&quot;contact_tw&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_contact_te_x0022_" msprop:Generator_ColumnPropNameInRow="__contact_te_" msprop:Generator_ColumnPropNameInTable="__contact_te_Column" msprop:Generator_ColumnVarNameInTable="_column_contact_te_" msprop:Generator_UserColumnName="&quot;contact_te&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_contact_ok_x0022_" msprop:Generator_ColumnPropNameInRow="__contact_ok_" msprop:Generator_ColumnPropNameInTable="__contact_ok_Column" msprop:Generator_ColumnVarNameInTable="_column_contact_ok_" msprop:Generator_UserColumnName="&quot;contact_ok&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_contact_in_x0022_" msprop:Generator_ColumnPropNameInRow="__contact_in_" msprop:Generator_ColumnPropNameInTable="__contact_in_Column" msprop:Generator_ColumnVarNameInTable="_column_contact_in_" msprop:Generator_UserColumnName="&quot;contact_in&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_contact_fa_x0022_" msprop:Generator_ColumnPropNameInRow="__contact_fa_" msprop:Generator_ColumnPropNameInTable="__contact_fa_Column" msprop:Generator_ColumnVarNameInTable="_column_contact_fa_" msprop:Generator_UserColumnName="&quot;contact_fa&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_official_n_x0022_" msprop:Generator_ColumnPropNameInRow="__official_n_" msprop:Generator_ColumnPropNameInTable="__official_n_Column" msprop:Generator_ColumnVarNameInTable="_column_official_n_" msprop:Generator_UserColumnName="&quot;official_n&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_aeroway_x0022_" msprop:Generator_ColumnPropNameInRow="__aeroway_" msprop:Generator_ColumnPropNameInTable="__aeroway_Column" msprop:Generator_ColumnVarNameInTable="_column_aeroway_" msprop:Generator_UserColumnName="&quot;aeroway&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_generato_6_x0022_" msprop:Generator_ColumnPropNameInRow="__generato_6_" msprop:Generator_ColumnPropNameInTable="__generato_6_Column" msprop:Generator_ColumnVarNameInTable="_column_generato_6_" msprop:Generator_UserColumnName="&quot;generato_6&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_smoking_x0022_" msprop:Generator_ColumnPropNameInRow="__smoking_" msprop:Generator_ColumnPropNameInTable="__smoking_Column" msprop:Generator_ColumnVarNameInTable="_column_smoking_" msprop:Generator_UserColumnName="&quot;smoking&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_power_x0022_" msprop:Generator_ColumnPropNameInRow="__power_" msprop:Generator_ColumnPropNameInTable="__power_Column" msprop:Generator_ColumnVarNameInTable="_column_power_" msprop:Generator_UserColumnName="&quot;power&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_disused_bu_x0022_" msprop:Generator_ColumnPropNameInRow="__disused_bu_" msprop:Generator_ColumnPropNameInTable="__disused_bu_Column" msprop:Generator_ColumnVarNameInTable="_column_disused_bu_" msprop:Generator_UserColumnName="&quot;disused_bu&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_residentia_x0022_" msprop:Generator_ColumnPropNameInRow="__residentia_" msprop:Generator_ColumnPropNameInTable="__residentia_Column" msprop:Generator_ColumnVarNameInTable="_column_residentia_" msprop:Generator_UserColumnName="&quot;residentia&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_alt_name_x0022_" msprop:Generator_ColumnPropNameInRow="__alt_name_" msprop:Generator_ColumnPropNameInTable="__alt_name_Column" msprop:Generator_ColumnVarNameInTable="_column_alt_name_" msprop:Generator_UserColumnName="&quot;alt_name&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_religion_x0022_" msprop:Generator_ColumnPropNameInRow="__religion_" msprop:Generator_ColumnPropNameInTable="__religion_Column" msprop:Generator_ColumnVarNameInTable="_column_religion_" msprop:Generator_UserColumnName="&quot;religion&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_denominati_x0022_" msprop:Generator_ColumnPropNameInRow="__denominati_" msprop:Generator_ColumnPropNameInTable="__denominati_Column" msprop:Generator_ColumnVarNameInTable="_column_denominati_" msprop:Generator_UserColumnName="&quot;denominati&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_descriptio_x0022_" msprop:Generator_ColumnPropNameInRow="__descriptio_" msprop:Generator_ColumnPropNameInTable="__descriptio_Column" msprop:Generator_ColumnVarNameInTable="_column_descriptio_" msprop:Generator_UserColumnName="&quot;descriptio&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_name_zh_x0022_" msprop:Generator_ColumnPropNameInRow="__name_zh_" msprop:Generator_ColumnPropNameInTable="__name_zh_Column" msprop:Generator_ColumnVarNameInTable="_column_name_zh_" msprop:Generator_UserColumnName="&quot;name_zh&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_wheelchair_x0022_" msprop:Generator_ColumnPropNameInRow="__wheelchair_" msprop:Generator_ColumnPropNameInTable="__wheelchair_Column" msprop:Generator_ColumnVarNameInTable="_column_wheelchair_" msprop:Generator_UserColumnName="&quot;wheelchair&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_ref_mkrf_t_x0022_" msprop:Generator_ColumnPropNameInRow="__ref_mkrf_t_" msprop:Generator_ColumnPropNameInTable="__ref_mkrf_t_Column" msprop:Generator_ColumnVarNameInTable="_column_ref_mkrf_t_" msprop:Generator_UserColumnName="&quot;ref_mkrf_t&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_phone_x0022_" msprop:Generator_ColumnPropNameInRow="__phone_" msprop:Generator_ColumnPropNameInTable="__phone_Column" msprop:Generator_ColumnVarNameInTable="_column_phone_" msprop:Generator_UserColumnName="&quot;phone&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_operator_x0022_" msprop:Generator_ColumnPropNameInRow="__operator_" msprop:Generator_ColumnPropNameInTable="__operator_Column" msprop:Generator_ColumnVarNameInTable="_column_operator_" msprop:Generator_UserColumnName="&quot;operator&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_opening__2_x0022_" msprop:Generator_ColumnPropNameInRow="__opening__2_" msprop:Generator_ColumnPropNameInTable="__opening__2_Column" msprop:Generator_ColumnVarNameInTable="_column_opening__2_" msprop:Generator_UserColumnName="&quot;opening__2&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_email_x0022_" msprop:Generator_ColumnPropNameInRow="__email_" msprop:Generator_ColumnPropNameInTable="__email_Column" msprop:Generator_ColumnVarNameInTable="_column_email_" msprop:Generator_UserColumnName="&quot;email&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_shop_x0022_" msprop:Generator_ColumnPropNameInRow="__shop_" msprop:Generator_ColumnPropNameInTable="__shop_Column" msprop:Generator_ColumnVarNameInTable="_column_shop_" msprop:Generator_UserColumnName="&quot;shop&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_healthcare_x0022_" msprop:Generator_ColumnPropNameInRow="__healthcare_" msprop:Generator_ColumnPropNameInTable="__healthcare_Column" msprop:Generator_ColumnVarNameInTable="_column_healthcare_" msprop:Generator_UserColumnName="&quot;healthcare&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_government_x0022_" msprop:Generator_ColumnPropNameInRow="__government_" msprop:Generator_ColumnPropNameInTable="__government_Column" msprop:Generator_ColumnVarNameInTable="_column_government_" msprop:Generator_UserColumnName="&quot;government&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_theatre_ge_x0022_" msprop:Generator_ColumnPropNameInRow="__theatre_ge_" msprop:Generator_ColumnPropNameInTable="__theatre_ge_Column" msprop:Generator_ColumnVarNameInTable="_column_theatre_ge_" msprop:Generator_UserColumnName="&quot;theatre_ge&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_addr_count_x0022_" msprop:Generator_ColumnPropNameInRow="__addr_count_" msprop:Generator_ColumnPropNameInTable="__addr_count_Column" msprop:Generator_ColumnVarNameInTable="_column_addr_count_" msprop:Generator_UserColumnName="&quot;addr_count&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_name_ru_x0022_" msprop:Generator_ColumnPropNameInRow="__name_ru_" msprop:Generator_ColumnPropNameInTable="__name_ru_Column" msprop:Generator_ColumnVarNameInTable="_column_name_ru_" msprop:Generator_UserColumnName="&quot;name_ru&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_start_date_x0022_" msprop:Generator_ColumnPropNameInRow="__start_date_" msprop:Generator_ColumnPropNameInTable="__start_date_Column" msprop:Generator_ColumnVarNameInTable="_column_start_date_" msprop:Generator_UserColumnName="&quot;start_date&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_tourism_x0022_" msprop:Generator_ColumnPropNameInRow="__tourism_" msprop:Generator_ColumnPropNameInTable="__tourism_Column" msprop:Generator_ColumnVarNameInTable="_column_tourism_" msprop:Generator_UserColumnName="&quot;tourism&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_office_x0022_" msprop:Generator_ColumnPropNameInRow="__office_" msprop:Generator_ColumnPropNameInTable="__office_Column" msprop:Generator_ColumnVarNameInTable="_column_office_" msprop:Generator_UserColumnName="&quot;office&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_short_name_x0022_" msprop:Generator_ColumnPropNameInRow="__short_name_" msprop:Generator_ColumnPropNameInTable="__short_name_Column" msprop:Generator_ColumnVarNameInTable="_column_short_name_" msprop:Generator_UserColumnName="&quot;short_name&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_amenity_x0022_" msprop:Generator_ColumnPropNameInRow="__amenity_" msprop:Generator_ColumnPropNameInTable="__amenity_Column" msprop:Generator_ColumnVarNameInTable="_column_amenity_" msprop:Generator_UserColumnName="&quot;amenity&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_website_x0022_" msprop:Generator_ColumnPropNameInRow="__website_" msprop:Generator_ColumnPropNameInTable="__website_Column" msprop:Generator_ColumnVarNameInTable="_column_website_" msprop:Generator_UserColumnName="&quot;website&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_name_en_x0022_" msprop:Generator_ColumnPropNameInRow="__name_en_" msprop:Generator_ColumnPropNameInTable="__name_en_Column" msprop:Generator_ColumnVarNameInTable="_column_name_en_" msprop:Generator_UserColumnName="&quot;name_en&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_leisure_x0022_" msprop:Generator_ColumnPropNameInRow="__leisure_" msprop:Generator_ColumnPropNameInTable="__leisure_Column" msprop:Generator_ColumnVarNameInTable="_column_leisure_" msprop:Generator_UserColumnName="&quot;leisure&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_addr_place_x0022_" msprop:Generator_ColumnPropNameInRow="__addr_place_" msprop:Generator_ColumnPropNameInTable="__addr_place_Column" msprop:Generator_ColumnVarNameInTable="_column_addr_place_" msprop:Generator_UserColumnName="&quot;addr_place&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_name_x0022_" msprop:Generator_ColumnPropNameInRow="__name_" msprop:Generator_ColumnPropNameInTable="__name_Column" msprop:Generator_ColumnVarNameInTable="_column_name_" msprop:Generator_UserColumnName="&quot;name&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_layer_x0022_" msprop:Generator_ColumnPropNameInRow="__layer_" msprop:Generator_ColumnPropNameInTable="__layer_Column" msprop:Generator_ColumnVarNameInTable="_column_layer_" msprop:Generator_UserColumnName="&quot;layer&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_height_x0022_" msprop:Generator_ColumnPropNameInRow="__height_" msprop:Generator_ColumnPropNameInTable="__height_Column" msprop:Generator_ColumnVarNameInTable="_column_height_" msprop:Generator_UserColumnName="&quot;height&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_type_x0022_" msprop:Generator_ColumnPropNameInRow="__type_" msprop:Generator_ColumnPropNameInTable="__type_Column" msprop:Generator_ColumnVarNameInTable="_column_type_" msprop:Generator_UserColumnName="&quot;type&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_building_l_x0022_" msprop:Generator_ColumnPropNameInRow="__building_l_" msprop:Generator_ColumnPropNameInTable="__building_l_Column" msprop:Generator_ColumnVarNameInTable="_column_building_l_" msprop:Generator_UserColumnName="&quot;building_l&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_addr_stree_x0022_" msprop:Generator_ColumnPropNameInRow="__addr_stree_" msprop:Generator_ColumnPropNameInTable="__addr_stree_Column" msprop:Generator_ColumnVarNameInTable="_column_addr_stree_" msprop:Generator_UserColumnName="&quot;addr_stree&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_addr_postc_x0022_" msprop:Generator_ColumnPropNameInRow="__addr_postc_" msprop:Generator_ColumnPropNameInTable="__addr_postc_Column" msprop:Generator_ColumnVarNameInTable="_column_addr_postc_" msprop:Generator_UserColumnName="&quot;addr_postc&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_addr_hou_1_x0022_" msprop:Generator_ColumnPropNameInRow="__addr_hou_1_" msprop:Generator_ColumnPropNameInTable="__addr_hou_1_Column" msprop:Generator_ColumnVarNameInTable="_column_addr_hou_1_" msprop:Generator_UserColumnName="&quot;addr_hou_1&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_addr_city_x0022_" msprop:Generator_ColumnPropNameInRow="__addr_city_" msprop:Generator_ColumnPropNameInTable="__addr_city_Column" msprop:Generator_ColumnVarNameInTable="_column_addr_city_" msprop:Generator_UserColumnName="&quot;addr_city&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0022_geom_x0022_" msprop:Generator_ColumnPropNameInRow="__geom_" msprop:Generator_ColumnPropNameInTable="__geom_Column" msprop:Generator_ColumnVarNameInTable="_column_geom_" msprop:Generator_UserColumnName="&quot;geom&quot;" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
