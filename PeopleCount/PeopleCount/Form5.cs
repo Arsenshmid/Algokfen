@@ -10,23 +10,20 @@ using System.Windows.Forms;
 
 namespace PeopleCount
 {
-    public partial class Form1 : Form
+    public partial class Form5 : Form
     {
-        public Form1()
+        public Form5()
         {
             InitializeComponent();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
+            this.Hide(); // Скрываем Form2
+            Form4 form1 = new Form4();
+            form1.Show(); // Отображаем Form1
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide(); 
-            Form2 form1 = new Form2();
-            form1.Show(); 
+
         }
     }
 }

@@ -9,3 +9,8 @@ C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCo
 C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.csproj.CoreCompileInputs.cache
 C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.exe
 C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.pdb
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.Form2.resources
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.Form3.resources
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.Form4.resources
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.Form5.resources
+C:\Users\apce1\Desktop\хакатон\PeopleCount\PeopleCount\obj\Debug\PeopleCount.Form6.resources

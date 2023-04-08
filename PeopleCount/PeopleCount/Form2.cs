@@ -23,5 +23,19 @@ namespace PeopleCount
             Form1 form1 = new Form1();
             form1.Show(); // Отображаем Form1
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form4 form1 = new Form4();
+            form1.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form5 form1 = new Form5();
+            form1.Show();
+        }
     }
 }
