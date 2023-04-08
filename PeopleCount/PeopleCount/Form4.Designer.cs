@@ -29,21 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.arsenDataSet6 = new PeopleCount.arsenDataSet6();
-            this.фактическоеЧислоЖителейBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.фактическоеЧислоЖителейTableAdapter = new PeopleCount.arsenDataSet6TableAdapters.ФактическоеЧислоЖителейTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buildingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addrstreeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addrhou1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.числожителейDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.фактическоеЧислоЖителейBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.arsenDataSet6 = new PeopleCount.arsenDataSet6();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.фактическоеЧислоЖителейTableAdapter = new PeopleCount.arsenDataSet6TableAdapters.ФактическоеЧислоЖителейTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.фактическоеЧислоЖителейBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet6)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -72,39 +73,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(790, 344);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(615, 401);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 37);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "редактировать";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(746, 401);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 37);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "выход";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // arsenDataSet6
-            // 
-            this.arsenDataSet6.DataSetName = "arsenDataSet6";
-            this.arsenDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // фактическоеЧислоЖителейBindingSource
-            // 
-            this.фактическоеЧислоЖителейBindingSource.DataMember = "ФактическоеЧислоЖителей";
-            this.фактическоеЧислоЖителейBindingSource.DataSource = this.arsenDataSet6;
-            // 
-            // фактическоеЧислоЖителейTableAdapter
-            // 
-            this.фактическоеЧислоЖителейTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -147,6 +115,39 @@
             this.числожителейDataGridViewTextBoxColumn.Name = "числожителейDataGridViewTextBoxColumn";
             this.числожителейDataGridViewTextBoxColumn.Width = 125;
             // 
+            // фактическоеЧислоЖителейBindingSource
+            // 
+            this.фактическоеЧислоЖителейBindingSource.DataMember = "ФактическоеЧислоЖителей";
+            this.фактическоеЧислоЖителейBindingSource.DataSource = this.arsenDataSet6;
+            // 
+            // arsenDataSet6
+            // 
+            this.arsenDataSet6.DataSetName = "arsenDataSet6";
+            this.arsenDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(615, 401);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 37);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "редактировать";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(746, 401);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 37);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "выход";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // фактическоеЧислоЖителейTableAdapter
+            // 
+            this.фактическоеЧислоЖителейTableAdapter.ClearBeforeFill = true;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -156,12 +157,13 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "PeopleCount";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.фактическоеЧислоЖителейBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

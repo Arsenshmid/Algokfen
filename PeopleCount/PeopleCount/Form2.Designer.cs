@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -45,13 +46,15 @@
             this.newSaisarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.newSaisarTableAdapter1 = new PeopleCount.arsenDataSet3TableAdapters.NewSaisarTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.arsenDataSet4 = new PeopleCount.arsenDataSet4();
-            this.newTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.newTableTableAdapter = new PeopleCount.arsenDataSet4TableAdapters.NewTableTableAdapter();
             this.buildingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addrstreeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addrhou1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.числожителейDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.newTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.arsenDataSet4 = new PeopleCount.arsenDataSet4();
+            this.newTableTableAdapter = new PeopleCount.arsenDataSet4TableAdapters.NewTableTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.saisarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet2)).BeginInit();
@@ -59,15 +62,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newSaisarBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(771, 455);
+            this.button1.Location = new System.Drawing.Point(709, 475);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 41);
+            this.button1.Size = new System.Drawing.Size(148, 52);
             this.button1.TabIndex = 0;
             this.button1.Text = "назад";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,7 +78,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(717, 84);
+            this.button2.Location = new System.Drawing.Point(709, 187);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 66);
             this.button2.TabIndex = 2;
@@ -84,7 +87,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(717, 12);
+            this.button3.Location = new System.Drawing.Point(709, 115);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(148, 66);
             this.button3.TabIndex = 3;
@@ -94,7 +97,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(717, 156);
+            this.button4.Location = new System.Drawing.Point(709, 259);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(148, 66);
             this.button4.TabIndex = 4;
@@ -104,7 +107,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(717, 228);
+            this.button5.Location = new System.Drawing.Point(709, 331);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(148, 66);
             this.button5.TabIndex = 5;
@@ -114,7 +117,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(717, 300);
+            this.button6.Location = new System.Drawing.Point(709, 403);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(148, 66);
             this.button6.TabIndex = 6;
@@ -175,26 +178,12 @@
             this.addrhou1DataGridViewTextBoxColumn,
             this.числожителейDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.newTableBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(52, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(32, 114);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(648, 484);
+            this.dataGridView1.Size = new System.Drawing.Size(648, 412);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // arsenDataSet4
-            // 
-            this.arsenDataSet4.DataSetName = "arsenDataSet4";
-            this.arsenDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // newTableBindingSource
-            // 
-            this.newTableBindingSource.DataMember = "NewTable";
-            this.newTableBindingSource.DataSource = this.arsenDataSet4;
-            // 
-            // newTableTableAdapter
-            // 
-            this.newTableTableAdapter.ClearBeforeFill = true;
             // 
             // buildingDataGridViewTextBoxColumn
             // 
@@ -228,11 +217,47 @@
             this.числожителейDataGridViewTextBoxColumn.Name = "числожителейDataGridViewTextBoxColumn";
             this.числожителейDataGridViewTextBoxColumn.Width = 125;
             // 
+            // newTableBindingSource
+            // 
+            this.newTableBindingSource.DataMember = "NewTable";
+            this.newTableBindingSource.DataSource = this.arsenDataSet4;
+            // 
+            // arsenDataSet4
+            // 
+            this.arsenDataSet4.DataSetName = "arsenDataSet4";
+            this.arsenDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // newTableTableAdapter
+            // 
+            this.newTableTableAdapter.ClearBeforeFill = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(83, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(676, 32);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Официально заявленное количество жильцов ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(245, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(333, 32);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Сайсарского полигона";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 532);
+            this.ClientSize = new System.Drawing.Size(882, 616);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -240,9 +265,10 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Информация по Сайсарскому округу";
+            this.Text = "PeopleCount";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saisarBindingSource)).EndInit();
@@ -251,9 +277,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newSaisarBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet4)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -282,5 +309,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn addrstreeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addrhou1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn числожителейDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

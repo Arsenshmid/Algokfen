@@ -29,19 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idhouseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.показанияПоДомуDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.счетчикиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.arsenDataSet5 = new PeopleCount.arsenDataSet5();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.arsenDataSet5 = new PeopleCount.arsenDataSet5();
-            this.счетчикиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.счетчикиTableAdapter = new PeopleCount.arsenDataSet5TableAdapters.счетчикиTableAdapter();
-            this.idhouseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.показанияПоДомуDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.счетчикиBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -58,6 +59,32 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(413, 552);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // idhouseDataGridViewTextBoxColumn
+            // 
+            this.idhouseDataGridViewTextBoxColumn.DataPropertyName = "id_house";
+            this.idhouseDataGridViewTextBoxColumn.HeaderText = "id_house";
+            this.idhouseDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idhouseDataGridViewTextBoxColumn.Name = "idhouseDataGridViewTextBoxColumn";
+            this.idhouseDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // показанияПоДомуDataGridViewTextBoxColumn
+            // 
+            this.показанияПоДомуDataGridViewTextBoxColumn.DataPropertyName = "показанияПоДому";
+            this.показанияПоДомуDataGridViewTextBoxColumn.HeaderText = "показанияПоДому";
+            this.показанияПоДомуDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.показанияПоДомуDataGridViewTextBoxColumn.Name = "показанияПоДомуDataGridViewTextBoxColumn";
+            this.показанияПоДомуDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // счетчикиBindingSource
+            // 
+            this.счетчикиBindingSource.DataMember = "счетчики";
+            this.счетчикиBindingSource.DataSource = this.arsenDataSet5;
+            // 
+            // arsenDataSet5
+            // 
+            this.arsenDataSet5.DataSetName = "arsenDataSet5";
+            this.arsenDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -96,35 +123,9 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // arsenDataSet5
-            // 
-            this.arsenDataSet5.DataSetName = "arsenDataSet5";
-            this.arsenDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // счетчикиBindingSource
-            // 
-            this.счетчикиBindingSource.DataMember = "счетчики";
-            this.счетчикиBindingSource.DataSource = this.arsenDataSet5;
-            // 
             // счетчикиTableAdapter
             // 
             this.счетчикиTableAdapter.ClearBeforeFill = true;
-            // 
-            // idhouseDataGridViewTextBoxColumn
-            // 
-            this.idhouseDataGridViewTextBoxColumn.DataPropertyName = "id_house";
-            this.idhouseDataGridViewTextBoxColumn.HeaderText = "id_house";
-            this.idhouseDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idhouseDataGridViewTextBoxColumn.Name = "idhouseDataGridViewTextBoxColumn";
-            this.idhouseDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // показанияПоДомуDataGridViewTextBoxColumn
-            // 
-            this.показанияПоДомуDataGridViewTextBoxColumn.DataPropertyName = "показанияПоДому";
-            this.показанияПоДомуDataGridViewTextBoxColumn.HeaderText = "показанияПоДому";
-            this.показанияПоДомуDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.показанияПоДомуDataGridViewTextBoxColumn.Name = "показанияПоДомуDataGridViewTextBoxColumn";
-            this.показанияПоДомуDataGridViewTextBoxColumn.Width = 125;
             // 
             // Form5
             // 
@@ -136,13 +137,14 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form5";
+            this.Text = "PeopleCount";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.счетчикиBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
