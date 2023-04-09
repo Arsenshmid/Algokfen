@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -37,14 +38,14 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(136, 101);
+            this.button1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(156, 102);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 42);
+            this.button1.Size = new System.Drawing.Size(252, 55);
             this.button1.TabIndex = 0;
             this.button1.Text = "Материалы Сайсарского округа";
             this.button1.UseVisualStyleBackColor = false;
@@ -52,13 +53,14 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(136, 149);
+            this.button2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(156, 182);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 42);
+            this.button2.Size = new System.Drawing.Size(252, 55);
             this.button2.TabIndex = 1;
             this.button2.Text = "карта";
             this.button2.UseVisualStyleBackColor = false;
@@ -66,13 +68,14 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(136, 293);
+            this.button3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button3.Location = new System.Drawing.Point(156, 418);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 42);
+            this.button3.Size = new System.Drawing.Size(252, 55);
             this.button3.TabIndex = 2;
             this.button3.Text = "выход";
             this.button3.UseVisualStyleBackColor = false;
@@ -80,13 +83,14 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(136, 245);
+            this.button4.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Location = new System.Drawing.Point(156, 340);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 42);
+            this.button4.Size = new System.Drawing.Size(252, 55);
             this.button4.TabIndex = 3;
             this.button4.Text = "о программе";
             this.button4.UseVisualStyleBackColor = false;
@@ -94,13 +98,14 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(136, 197);
+            this.button5.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.Location = new System.Drawing.Point(156, 262);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(176, 42);
+            this.button5.Size = new System.Drawing.Size(252, 55);
             this.button5.TabIndex = 4;
             this.button5.Text = "вычислить выгоду";
             this.button5.UseVisualStyleBackColor = false;
@@ -110,13 +115,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGreen;
-            this.ClientSize = new System.Drawing.Size(454, 409);
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(573, 590);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PeopleCount";

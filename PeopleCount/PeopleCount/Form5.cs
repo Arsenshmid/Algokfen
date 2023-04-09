@@ -28,6 +28,10 @@ namespace PeopleCount
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "arsenDataSet15.счетчики". При необходимости она может быть перемещена или удалена.
+            this.счетчикиTableAdapter2.Fill(this.arsenDataSet15.счетчики);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "arsenDataSet14.счетчики". При необходимости она может быть перемещена или удалена.
+            this.счетчикиTableAdapter1.Fill(this.arsenDataSet14.счетчики);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "arsenDataSet5.счетчики". При необходимости она может быть перемещена или удалена.
             this.счетчикиTableAdapter.Fill(this.arsenDataSet5.счетчики);
 

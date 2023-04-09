@@ -46,9 +46,6 @@
             this.новаяТаблицаBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.новаяТаблицаTableAdapter2 = new PeopleCount.arsenDataSet12TableAdapters.НоваяТаблицаTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.arsenDataSet13 = new PeopleCount.arsenDataSet13();
-            this.новаяТаблицаBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.новаяТаблицаTableAdapter3 = new PeopleCount.arsenDataSet13TableAdapters.НоваяТаблицаTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buildingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addrstreeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +53,9 @@
             this.официальноечисложителейDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.фактическоечисложителейDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.выгодаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.новаяТаблицаBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.arsenDataSet13 = new PeopleCount.arsenDataSet13();
+            this.новаяТаблицаTableAdapter3 = new PeopleCount.arsenDataSet13TableAdapters.НоваяТаблицаTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.фактическоеЧислоЖителейBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet10)).BeginInit();
@@ -65,16 +65,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.новаяТаблицаBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.новаяТаблицаBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet13)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 9);
+            this.label1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(230, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(384, 16);
+            this.label1.Size = new System.Drawing.Size(579, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "информация о фактическом количестве жителей в домах";
             // 
@@ -174,20 +175,6 @@
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // arsenDataSet13
-            // 
-            this.arsenDataSet13.DataSetName = "arsenDataSet13";
-            this.arsenDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // новаяТаблицаBindingSource3
-            // 
-            this.новаяТаблицаBindingSource3.DataMember = "НоваяТаблица";
-            this.новаяТаблицаBindingSource3.DataSource = this.arsenDataSet13;
-            // 
-            // новаяТаблицаTableAdapter3
-            // 
-            this.новаяТаблицаTableAdapter3.ClearBeforeFill = true;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
@@ -244,6 +231,20 @@
             this.выгодаDataGridViewTextBoxColumn.Name = "выгодаDataGridViewTextBoxColumn";
             this.выгодаDataGridViewTextBoxColumn.Width = 125;
             // 
+            // новаяТаблицаBindingSource3
+            // 
+            this.новаяТаблицаBindingSource3.DataMember = "НоваяТаблица";
+            this.новаяТаблицаBindingSource3.DataSource = this.arsenDataSet13;
+            // 
+            // arsenDataSet13
+            // 
+            this.arsenDataSet13.DataSetName = "arsenDataSet13";
+            this.arsenDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // новаяТаблицаTableAdapter3
+            // 
+            this.новаяТаблицаTableAdapter3.ClearBeforeFill = true;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -267,8 +268,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.новаяТаблицаBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.новаяТаблицаBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arsenDataSet13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

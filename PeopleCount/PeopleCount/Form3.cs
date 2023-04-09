@@ -17,61 +17,14 @@ namespace PeopleCount
         {
             InitializeComponent();
             // Загрузить изображение карты в PictureBox
-            pictureBox1.Image = Image.FromFile("C:\\Users\\apce1\\Desktop\\хакатон\\черновикКарты_прототип2.png");
-
-            // Добавить метки на карту
-            markerPositions.Add(new PointF(100, 200));
-            markerPositions.Add(new PointF(300, 400));
+            
         }
 
-        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
-        {
-            // Обработчик события нажатия кнопки мыши на PictureBox
-            // Определяем, было ли нажатие на метку
-            for (int i = 0; i < markerPositions.Count; i++)
-            {
-                PointF markerPos = markerPositions[i];
-                RectangleF markerRect = new RectangleF(markerPos.X - 5, markerPos.Y - 5, 10, 10);
+       
 
-                if (markerRect.Contains(e.Location))
-                {
-                    isDragging = true;
-                    currentMarkerPos = markerPos;
-                    return;
-                }
-            }
-        }
+       
 
-        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
-        {
-            // Обработчик события перемещения мыши на PictureBox
-            // Перемещаем выбранную метку, если она есть
-            if (isDragging)
-            {
-                currentMarkerPos.X = e.X;
-                currentMarkerPos.Y = e.Y;
-                pictureBox1.Invalidate();
-            }
-        }
-
-        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
-        {
-            // Обработчик события отпускания кнопки мыши на PictureBox
-            // Заканчиваем перемещение метки
-            isDragging = false;
-            currentMarkerPos = PointF.Empty;
-        }
-
-        private void pictureBox1_Paint(object sender, PaintEventArgs e)
-        {
-            // Обработчик события перерисовки PictureBox
-            // Рисуем метки на картинке
-            Graphics g = e.Graphics;
-            foreach (PointF markerPos in markerPositions)
-            {
-                g.FillEllipse(Brushes.Red, markerPos.X - 5, markerPos.Y - 5, 10, 10);
-            }
-        }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -124,7 +77,7 @@ namespace PeopleCount
 
 
             // Создание изображения карты
-            Image mapImage = Image.FromFile("C:\\Users\\apce1\\Desktop\\хакатон\\черновикКарты_прототип2.png");
+            Image mapImage = Image.FromFile("C:\\Users\\apce1\\Desktop\\хакатон\\черновикКарты_прототип3.png");
 
             // Создание объекта Graphics для рисования на картинке
             Graphics g = Graphics.FromImage(mapImage);

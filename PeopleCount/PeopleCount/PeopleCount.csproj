@@ -133,6 +133,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>arsenDataSet13.xsd</DependentUpon>
     </Compile>
+    <Compile Include="arsenDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arsenDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arsenDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arsenDataSet15.xsd</DependentUpon>
+    </Compile>
     <Compile Include="arsenDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -303,6 +313,28 @@
     </None>
     <None Include="arsenDataSet13.xss">
       <DependentUpon>arsenDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet14.xsc">
+      <DependentUpon>arsenDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arsenDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arsenDataSet14.xss">
+      <DependentUpon>arsenDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet15.xsc">
+      <DependentUpon>arsenDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="arsenDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arsenDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arsenDataSet15.xss">
+      <DependentUpon>arsenDataSet15.xsd</DependentUpon>
     </None>
     <None Include="arsenDataSet2.xsc">
       <DependentUpon>arsenDataSet2.xsd</DependentUpon>
