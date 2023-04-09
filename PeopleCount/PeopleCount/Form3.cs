@@ -16,16 +16,8 @@ namespace PeopleCount
         public Form3()
         {
             InitializeComponent();
-            // Загрузить изображение карты в PictureBox
-            
+
         }
-
-       
-
-       
-
-        
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -45,59 +37,49 @@ namespace PeopleCount
 
 
 
-
-        private void LoadMap(string district)
-        {
-
-        }
-
-
         private void Form3_Load(object sender, EventArgs e)
         {
-            // webBrowser1.Navigate("https://www.openstreetmap.org");
+            Point[] points = new Point[6];
 
+            // Задаем координаты точек на pictureBox1
+            points[0] = new Point(100, 100);
+            points[1] = new Point(200, 200);
+            points[2] = new Point(250, 250);
+            points[3] = new Point(150, 150);
+            points[4] = new Point(150, 100);
+            points[5] = new Point(400, 100);
 
+            // Добавляем обработчик события нажатия на pictureBox1
+            pictureBox1.MouseDown += new MouseEventHandler((s, a) =>
+            {
+                // Определяем, на какую точку кликнули
+                int index = -1;
+                for (int i = 0; i < points.Length; i++)
+                {
+                    if (Math.Abs(points[i].X - a.Location.X) <= 40 && Math.Abs(points[i].Y - a.Location.Y) <= 40)
+                    {
+                        index = i;
+                        break;
+                    }
+                }
 
-            //// Создайте объект карты SharpMap
-            //SharpMap.Map myMap = new SharpMap.Map(pictureBox1.Size);
+                // Выводим информацию в MessageBox
+                if (index != -1)
+                {
+                    MessageBox.Show($"Прописано: 5\nПо факту: 7\nВыгода: 2000");
+                }
+            });
 
-            //// Создайте источник данных для карты
-            //SharpMap.Data.Providers.ShapeFile myDataSource = new SharpMap.Data.Providers.ShapeFile(@"C:\Users\apce1\Desktop\хакатон\PeopleCount\map.png");
-
-            //// Добавьте источник данных на карту
-            //myMap.Layers.Add(new SharpMap.Layers.VectorLayer("My layer", myDataSource));
-
-            //// Установите начальное положение карты и масштаб
-            //myMap.ZoomToExtents();
-
-            //// Отобразите карту в PictureBox
-            //pictureBox1.Image = myMap.GetMap();
-
-
-
-
-            // Создание изображения карты
-            Image mapImage = Image.FromFile("C:\\Users\\apce1\\Desktop\\хакатон\\черновикКарты_прототип3.png");
-
-            // Создание объекта Graphics для рисования на картинке
-            Graphics g = Graphics.FromImage(mapImage);
-
-            // Рисование метки на изображении
-            SolidBrush brush = new SolidBrush(Color.Red); // выбор цвета метки
-            int x = 100; // координата x метки на карте
-            int y = 200; // координата y метки на карте
-            int size = 10; // размер метки
-            g.FillEllipse(brush, x - size / 2, y - size / 2, size, size); // рисование круглой метки в точке (x, y)
-
-            // Отображение изображения на PictureBox
-            pictureBox1.Image = mapImage;
+            // Добавляем обработчик события отрисовки pictureBox1
+            pictureBox1.Paint += new PaintEventHandler((s, a) =>
+            {
+                // Рисуем желтые точки
+                Brush brush = Brushes.Red;
+                foreach (Point p in points)
+                {
+                    a.Graphics.FillEllipse(brush, p.X, p.Y, 40, 40);
+                }
+            });
         }
-        private List<PointF> markerPositions = new List<PointF>();
-        private bool isDragging = false;
-        private PointF currentMarkerPos = PointF.Empty;
-
-     
-
-       
     }
 }
